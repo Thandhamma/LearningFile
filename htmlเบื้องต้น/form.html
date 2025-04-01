@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            border:2px solid rgb(56, 56, 247)
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" style="float: right;">กลับหน้าแรก</a>
+    <h1 align="center">แบบฟอร์มลงทะเบียน</h1>
+    <form align="center">
+        <div>
+            <label for="firstname">ชื่อจริง</label>
+            <input type="text" name="fname" placeholder="ป้อนชื่อจริงของคุณ" required>
+        </div>
+        <br> <!-- เว้นบรรทัด-->
+        <div>
+            <label for="lastname">นามสกุล</label>
+            <input type="text" name="lname" placeholder="ป้อนนามสกุลของคุณ" required>
+        </div>
+        <br>
+        <div>
+            <label for="email">อีเมลล์</label>
+            <input type="email" name="email" required>
+        </div>
+        <br>
+        <div>
+            <label for="password">รหัสผ่าน </label>
+            <input type="password" name="password" required>
+        </div>
+        <br>
+        <div>
+            <label for="">ที่อยู่</label>
+            <textarea name="" cols="20" rows="5"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="age">อายุ</label>
+            <input type="number" name="age" min="0" max="70" value="1" required>
+        </div>
+        <br>
+        <div>
+            <label for="bdate">วันเกิด</label>
+            <input type="date" name="birthdate" required>
+        </div>
+        <br>
+        <div>
+            <label for="telnum">เบอร์โทร</label>
+            <input type="tel" name="telnumber" required>
+        </div>
+        <br>
+        <div>
+            <label for="color">สีที่ชอบ</label>
+            <input type="color" name="favcolor">
+        </div>
+        <br>
+        <div>
+            <label for="range" >ช่วงตัวเลข</label>
+            <input type="range" name="rangeofnumber" value="5" min="0" max="100">
+        </div>
+        <br>
+        <div>
+            <label for="Educate">ระดับการศึกษา</label>
+            <select name="edu" id="">
+                <option value="กสน">กสน</option>
+                <option value="มัธยมศีกษา">มัธยมศึกษา</option>
+                <option value="ปริญญาตรี"selected>ปริญญาตรี</option>
+                <option value="ปริญญาโท">ปริญญาโท</option>
+                <option value="ปริญญาเอก">ปริญญาเอก</option>
+                <option value="ปวส/ปวช">ปวส/ปวช</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="gender">เพศ</label>
+            <input type="radio" name="gender">เพศชาย <!-- กำหนด name= เพื่อให้เลือกได้ตัวเดียว-->
+            <input type="radio" name="gender">เพศหญิง
+            <input type="radio" name="gender">LBGTQ+
+            <input type="radio" name="gender">ไม่ขอระบุ 
+        </div>
+        <br>
+        <div>
+            <label for="favthing">สิ่งที่ชอบ</label>
+            <input type="checkbox" name="fav">เขียนเว็บ
+            <input type="checkbox" name="fav">เล่นเกม
+            <input type="checkbox" name="fav">ออกกำลังกาย
+            <input type="checkbox" name="fav">นอน
+            <input type="checkbox" name="fav">เรียนรู้
+            <input type="checkbox" name="fav">อื่นๆ
+        </div>
+        <br>
+        <div>
+            <label for="inputfile">แนบเอกสาร</label>
+            <input type="file" >
+        </div>
+        <br>
+        <div>
+            <label for="website">เว็บไซต์</label>
+            <input type="url">
+        </div>
+        <br>
+        <div>
+            <button type="submit">บันทึกข้อมูล</button>
+            <input type="reset" name="" id="" value="ล้างข้อมูล">
+        </div>
+    </form>
+</body>
+</html>
